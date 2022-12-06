@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+/* =============== MAIN PAGE STYLING =============== */
+html {
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #141414;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: flex;
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.crawl-text {
+  color: #ffc909;
+  font-size: 3vw;
+  line-height: 1.5em;
+  text-align: justify;
+  font-weight: bold;
+  position: relative;
+  animation: crawl 60s linear forwards;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+@keyframes crawl {
+  from {
+    top: 0;
+  }
+  to {
+    top: -7500px;
+  }
+}
