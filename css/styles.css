@@ -32,16 +32,6 @@ body {
   transform: scaleY(0.9);
 }
 
-.crawl-text {
-  position: absolute;
-  top: 0;
-  left: 28%;
-  right: 28%;
-  height: 100%;
-  animation: crawl 180s linear infinite;
-  /* animation-play-state: paused; */
-}
-
 body::after {
   content: "";
   position: fixed;
@@ -63,7 +53,7 @@ body::after {
   width: 1px;
 }
 
-/* INTRO */
+/* ================= INTRO SEQUENCE ================= */
 
 .intro {
   position: absolute;
@@ -77,6 +67,35 @@ body::after {
   color: #4bd5ee;
   z-index: 2;
   transform: translate(-50%, -50%);
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ================= LOGO SEQUENCE ================= */
+
+/* ================= CRAWL SEQUENCE ================= */
+
+.crawl-text {
+  position: absolute;
+  top: 0;
+  left: 28%;
+  right: 28%;
+  height: 100%;
+  animation: crawl 180s linear infinite;
+  /* animation-play-state: paused; */
 }
 
 .titles {
