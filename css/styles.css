@@ -67,6 +67,7 @@ body::after {
   color: #4bd5ee;
   z-index: 2;
   transform: translate(-50%, -50%);
+  animation: intro 6s ease-out 0.5s;
 }
 
 @keyframes intro {
