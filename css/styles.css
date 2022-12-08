@@ -13,7 +13,7 @@ body {
   font-family: "Franklin Gothic Medium", sans-serif;
   background-color: rgb(0, 0, 0);
   color: #ffbe00;
-  overflow: hidden;
+  overflow: hidden !important;
   font-size: 3vw;
   line-height: 1.5em;
 }
@@ -23,49 +23,54 @@ body::after {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 60%;
-  background: linear-gradient(
-    180deg,
-    rgb(20, 20, 20, 1) 20%,
-    rgb(20, 20, 20, 0) 100%
-  );
+  height: 100%;
 }
 
 .stars {
   position: absolute;
   background-color: #fff;
-  z-index: 2;
+  z-index: 0;
   height: 1px;
   width: 1px;
+}
+
+#btn {
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  width: 100px;
 }
 
 /* ================= INTRO SEQUENCE ================= */
 
 .intro {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 35vh;
+  left: 25vw;
   opacity: 0;
-  font-weight: 500;
   font-size: 3.25rem;
-  width: 80%;
+  width: 60%;
   font-family: "Open Sans", sans-serif;
   color: #4bd5ee;
   z-index: 2;
-  transform: translate(-50%, -50%);
-  animation: intro 6s ease-out 0.5s;
+  /* transform: translate(-50%, -50%); */
+  animation: intro 7s ease-in-out 0.5s;
+  animation-play-state: paused;
+  display: none;
 }
 
 @keyframes intro {
   0% {
     opacity: 0;
   }
-  20% {
+  25% {
     opacity: 1;
   }
-  90% {
+  75% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -81,7 +86,10 @@ body::after {
   width: 100%;
   opacity: 0;
   z-index: 2;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation: logo 10s ease-out 9s;
+  animation-play-state: paused;
+  display: none;
 }
 
 @keyframes logo {
@@ -122,20 +130,24 @@ body::after {
 .crawl-text {
   top: 100%;
   position: absolute;
-  animation: crawl 100s linear 17s;
+  animation: crawl 160s linear 17s;
+  animation-play-state: paused;
+  display: none;
 }
 
 .container::after {
   position: absolute;
-  content: "";
+  top: 0;
   bottom: 60%;
   left: 0;
   right: 0;
-  top: 0;
+  content: "";
   background: linear-gradient(
     180deg,
-    rgb(20, 20, 20, 1) 20%,
-    rgb(20, 20, 20, 0) 100%
+    rgb(0, 0, 0, 1) 25%,
+    rgb(0, 0, 0, 0.75) 50%,
+    rgb(0, 0, 0, 0.5) 75%,
+    rgb(0, 0, 0, 0.25) 100%
   );
 }
 
