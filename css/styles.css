@@ -36,10 +36,21 @@ body::after {
 
 #btn {
   z-index: 2;
-  top: 50%;
-  left: 50%;
+  top: 500px;
+  left: 0%;
   height: 100px;
   width: 100px;
+  display: block;
+  position: relative;
+}
+
+.playShow {
+  animation-play-state: running;
+  display: block;
+}
+
+.hideButton {
+  display: none;
 }
 
 /* ================= INTRO SEQUENCE ================= */
