@@ -49,5 +49,5 @@ btnElement.addEventListener("click", function () {
     document.getElementById("background-music").play();
     console.log("Audio played now, when the Star Wars logo flies in");
   }, 8600);
-  console.log("hi");
+  console.log("test");
 });

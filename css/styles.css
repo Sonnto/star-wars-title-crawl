@@ -179,7 +179,7 @@ p {
 
 #btn {
   top: 100px;
-  left: 725px;
+  left: 712px;
   display: block;
   position: relative;
   z-index: 2;
@@ -204,7 +204,6 @@ p {
     rgba(254, 254, 254, 1) 100%
   );
   z-index: 2;
-  /* display: none; */
 }
 
 .blade {
@@ -225,7 +224,7 @@ p {
   border-top-right-radius: 5px;
   box-shadow: 0 0 10px #daf1ff;
   z-index: -1;
-  /* display: none; */
+  cursor: pointer;
 }
 
 .blade-tip {
@@ -245,4 +244,16 @@ p {
   rotate: 45deg;
   box-shadow: 0 0 10px #daf1ff;
   z-index: -1;
+  cursor: pointer;
+}
+
+.ignition {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: rgb(164, 0, 0);
+  border-radius: 100%;
+  left: 8px;
+  top: 30px;
+  cursor: pointer;
 }
