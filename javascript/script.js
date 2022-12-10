@@ -35,19 +35,34 @@ let crawlTextElement = document.getElementById("crawl-text");
 btnElement.addEventListener("click", function () {
   console.log(introElement.style.animationPlayState);
   function playAll() {
+    //play n show intro
     introElement.style.animationPlayState = "running";
     introElement.style.display = "block";
+
+    //play n show logo
     logoElement.style.animationPlayState = "running";
     logoElement.style.display = "block";
+
+    //play n show crawl
     crawlTextElement.style.animationPlayState = "running";
     crawlTextElement.style.display = "block";
+
+    //hide lightsabre button
     btnElement.style.display = "none";
     console.log(introElement.style.animationPlayState);
   }
+
   playAll();
+
+  let musicElement = document.getElementById("background-music");
+
   setTimeout(function () {
-    document.getElementById("background-music").play();
+    musicElement.play();
     console.log("Audio played now, when the Star Wars logo flies in");
   }, 8600);
-  console.log("test");
+
+  setTimeout(function () {
+    musicElement.pause();
+    console.log("Audio has been paused");
+  }, 87000);
 });
