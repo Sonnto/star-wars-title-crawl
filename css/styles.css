@@ -30,8 +30,8 @@ body::after {
   position: absolute;
   background-color: #fff;
   z-index: 0;
-  height: 1px;
-  width: 1px;
+  height: 0.5px;
+  width: 0.5px;
 }
 
 /* ================= INTRO SEQUENCE ================= */
@@ -146,13 +146,13 @@ body::after {
   margin-bottom: 1.5em;
 }
 
-h1 {
+#crawl-text h1 {
   font-size: 3rem;
   text-align: center;
   line-height: 2.5em;
 }
 
-h2 {
+#crawl-text h2 {
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -160,7 +160,7 @@ h2 {
   transform: scaleY(1.8);
 }
 
-p {
+#crawl-text p {
   text-align: justify;
   padding: 0.5em 0;
   font-weight: bold;
@@ -183,6 +183,9 @@ p {
   display: block;
   position: relative;
   z-index: 2;
+  margin: 0;
+  padding: 0;
+  width: 0;
 }
 
 #btn .hilt {
@@ -257,3 +260,7 @@ p {
   top: 30px;
   cursor: pointer;
 }
+
+/* ================= CITATION ================= */
+/* StarWarsOpeningLogo.svg | citation: https://logos-download.com/wp-content/uploads/2016/09/Star_Wars_logo.svg
+/* star-wars-main-theme.mp3 | citation: http://soundfxcenter.com/download-sound/star-wars-main-theme-song/
