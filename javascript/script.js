@@ -59,10 +59,10 @@ btnElement.addEventListener("click", function () {
   setTimeout(function () {
     musicElement.play();
     console.log("Audio played now, when the Star Wars logo flies in");
-  }, 8600);
+  }, 8600); /* 8.6 seconds */
 
   setTimeout(function () {
     musicElement.pause();
     console.log("Audio has been paused");
-  }, 87000);
+  }, 104000); /* 104 seconds - 1:33 minutes */
 });
