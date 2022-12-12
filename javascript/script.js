@@ -64,5 +64,5 @@ btnElement.addEventListener("click", function () {
   setTimeout(function () {
     musicElement.pause();
     console.log("Audio has been paused");
-  }, 104000); /* 104 seconds - 1:33 minutes */
+  }, 104000); /* 104 seconds - 1:34 minutes */
 });
