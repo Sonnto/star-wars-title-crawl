@@ -178,7 +178,7 @@ body::after {
 /* ================= LIGHTSABER START BUTTON ================= */
 
 #btn {
-  top: 100px;
+  top: 40px;
   left: 712px;
   display: block;
   position: relative;
@@ -217,11 +217,11 @@ body::after {
   width: 20px;
   background: linear-gradient(
     to right,
-    rgba(135, 206, 235, 1) 0%,
-    rgb(202, 239, 254) 25%,
+    rgb(48, 135, 222, 1) 0%,
+    rgb(87, 149, 219) 25%,
     rgb(255, 255, 255) 50%,
-    rgb(202, 239, 254) 75%,
-    rgba(135, 206, 235, 1) 100%
+    rgb(87, 149, 219) 75%,
+    rgb(48, 135, 222) 100%
   );
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -236,10 +236,11 @@ body::after {
   top: 30px;
   height: 14px;
   width: 14px;
-  background: radial-gradient(
-    rgba(255, 255, 255, 1) 45%,
-    rgb(175, 232, 255) 30%,
-    rgba(135, 206, 235, 1) 100%
+  background: radial-gradient( circle,
+    rgba(255, 255, 255, 1) 38%,
+    rgb(48, 135, 222, 1) 5%,
+    rgb(87, 149, 219) 20%,
+    rgb(48, 135, 222, 1) 5%
   );
   border-top-right-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -256,10 +257,28 @@ body::after {
   height: 10px;
   background: rgb(164, 0, 0);
   border-radius: 100%;
-  left: 8px;
+  left: 7.5px;
   top: 30px;
   cursor: pointer;
 }
+
+.begin {
+  position: absolute;
+  width: 200px;
+  top: 580px;
+  left: -85px;
+  text-align: center;
+}
+
+.begin p {
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  color:#ffbe00;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: capitalize;
+}
+
 
 /* ================= CITATION ================= */
 /* StarWarsOpeningLogo.svg | citation: https://logos-download.com/wp-content/uploads/2016/09/Star_Wars_logo.svg
