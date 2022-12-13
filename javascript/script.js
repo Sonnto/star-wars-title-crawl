@@ -2,7 +2,7 @@
 //variable for amount of stars
 const starAmount = 800;
 
-//loop to create 800 stars based off randomized "co-ordinates" from randomize function
+//loop to create stars based off randomized "co-ordinates" from randomize function
 for (let i = 0; i < starAmount; i++) {
   let star = document.createElement("div");
 
@@ -59,7 +59,7 @@ btnElement.addEventListener("click", function () {
   setTimeout(function () {
     musicElement.play();
     console.log("Audio played now, when the Star Wars logo flies in");
-  }, 8600); /* 8.6 seconds */
+  }, 8400); /* 8.4 seconds */
 
   setTimeout(function () {
     musicElement.pause();
