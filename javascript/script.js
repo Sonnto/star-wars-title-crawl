@@ -56,10 +56,20 @@ btnElement.addEventListener("click", function () {
 
   let musicElement = document.getElementById("background-music");
 
-  setTimeout(function () {
+  function playMusic() {
     musicElement.play();
-    console.log("Audio played now, when the Star Wars logo flies in");
-  }, 8400); /* 8.4 seconds */
+  }
+
+  // function stopMusic() {
+  //   musicElement.paused();
+  // }
+
+  logoElement.addEventListener("animationstart", playMusic);
+  // crawlTextElement.addEventListener("animationend", stopMusic);
+  // setTimeout(function () {
+  //   musicElement.play();
+  //   console.log("Audio played now, when the Star Wars logo flies in");
+  // }, 8600);
 
   setTimeout(function () {
     musicElement.pause();
