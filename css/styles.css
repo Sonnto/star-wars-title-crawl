@@ -86,8 +86,11 @@ body::after {
 
 @keyframes logo {
   0% {
-    opacity: 1;
+    opacity: 0;
     transform: translate(-50%, -50%) scale(2);
+  }
+  2%{
+    opacity: 1;
   }
   90% {
     opacity: 1;
@@ -178,8 +181,8 @@ body::after {
 /* ================= LIGHTSABER START BUTTON ================= */
 
 #btn {
-  top: 40px;
-  left: 712px;
+  top: 5vh;
+  left: 50vw;
   display: block;
   position: relative;
   z-index: 2;
