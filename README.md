@@ -8,10 +8,6 @@ A short interactive animated webpage that will produce the classic Star Wars tit
 - CSS
 - JavaScript
 
-## APIs
-- COVID API (https://covid-api.com)
-- Google Maps embedded API
-
 # Instructions
 
 ## What to do?
