@@ -12,6 +12,8 @@ A short interactive animated webpage that will produce the classic Star Wars tit
 - COVID API (https://covid-api.com)
 - Google Maps embedded API
 
-# Instructions/Installation Steps
+# Instructions
+
+## What to do?
 
 Just click the lightsabre hilt handle and refresh to replay
