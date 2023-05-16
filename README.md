@@ -16,4 +16,4 @@ A short interactive animated webpage that will produce the classic Star Wars tit
 
 ## What to do?
 
-Just click the lightsabre hilt handle and refresh to replay
+Just click the lightsabre hilt and refresh page to replay
